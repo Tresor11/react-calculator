@@ -1,31 +1,22 @@
+/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ReactDOM from 'react-dom';
+import ButtonPanel from './components/ButtonPanel';
+import Display from './components/Display';
+import './style.css';
 
-function App() {
-  return (
-    // eslint-disable-next-line react/jsx-filename-extension
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Display />
+        <ButtonPanel />
+      </div>
+    );
+  }
 }
 
-export default App;
+const root = document.getElementById('root');
+ReactDOM.render(<App />, root);
