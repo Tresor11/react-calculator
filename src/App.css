@@ -25,27 +25,11 @@ button{
   font-weight: normal;
   font-size: 25px;
   border: 1px solid rgb(192, 192, 192);
-  transition: background-color 2s;
-  -webkit-transition: background-color 2s;
-  -moz-transition: background-color 2s;
-  -ms-transition: background-color 2s;
-  -o-transition: background-color 2s;
-}
-
-button:hover{
-  background-color: rgb(160, 160, 160);
-}
-
-.wide{
-  flex: 2;
-}
-
-.color{
-  background-color: rgb(255, 171, 74);
-}
-
-.color:hover{
-  background-color: rgb(253, 150, 31);
+  transition: font-weight 2s;
+  -webkit-transition: font-weight 2s;
+  -moz-transition: font-weight 2s;
+  -ms-transition: font-weight 2s;
+  -o-transition: font-weight 2s;
 }
 
 .display{
