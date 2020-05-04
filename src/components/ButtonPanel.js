@@ -9,30 +9,30 @@ export default function ButtonPanel() {
         <Button name="Ac" />
         <Button name="+/-" />
         <Button name="%" />
-        <Button name="÷" className="color" />
+        <Button name="÷" color="rgb(255, 171, 74)" />
       </div>
       <div className="btn-row">
         <Button name="7" />
         <Button name="8" />
         <Button name="9" />
-        <Button name="x" className="color" />
+        <Button name="x" color="rgb(255, 171, 74)" />
       </div>
       <div className="btn-row">
         <Button name="4" />
         <Button name="5" />
         <Button name="6" />
-        <Button name="-" className="color" />
+        <Button name="-" color="rgb(255, 171, 74)" />
       </div>
       <div className="btn-row">
         <Button name="1" />
         <Button name="2" />
         <Button name="3" />
-        <Button name="+" className="color" />
+        <Button name="+" color="rgb(255, 171, 74)" />
       </div>
       <div className="btn-row">
-        <Button className="wide" name="0" />
+        <Button wide name="0" />
         <Button name="." />
-        <Button name="=" className="color" />
+        <Button name="=" color="rgb(255, 171, 74)" />
       </div>
     </div>
   );

@@ -40,14 +40,6 @@ button:hover{
   flex: 2;
 }
 
-.color{
-  background-color: rgb(255, 171, 74);
-}
-
-.color:hover{
-  background-color: rgb(253, 150, 31);
-}
-
 .display{
   background-color:gray;
   color: white;
