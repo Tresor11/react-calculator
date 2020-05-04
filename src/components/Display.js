@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function Display({ result }) {
-  return <h4>{result}</h4>;
+  return (
+    <div className="display">
+      <h1>{result}</h1>
+    </div>
+  );
 }
 
 Display.propTypes = {
