@@ -1,5 +1,4 @@
 /* eslint-disable prefer-const */
-/* eslint-disable no-sequences */
 import operate from './operate';
 
 const calculate = (buttonName, calculatorData) => {
