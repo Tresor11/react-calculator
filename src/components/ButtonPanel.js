@@ -6,33 +6,33 @@ export default function ButtonPanel() {
   return (
     <div className="btn-cont">
       <div className="btn-row">
-        <Button name="Ac" />
-        <Button name="+/-" />
-        <Button name="%" />
-        <Button name="÷" color="rgb(255, 171, 74)" />
+        <Button name="Ac" color="rgb(226, 226, 226)" />
+        <Button name="+/-" color="rgb(226, 226, 226)" />
+        <Button name="%" color="rgb(226, 226, 226)" />
+        <Button name="÷" />
       </div>
       <div className="btn-row">
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
-        <Button name="x" color="rgb(255, 171, 74)" />
+        <Button name="7" color="rgb(226, 226, 226)" />
+        <Button name="8" color="rgb(226, 226, 226)" />
+        <Button name="9" color="rgb(226, 226, 226)" />
+        <Button name="x" />
       </div>
       <div className="btn-row">
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
-        <Button name="-" color="rgb(255, 171, 74)" />
+        <Button name="4" color="rgb(226, 226, 226)" />
+        <Button name="5" color="rgb(226, 226, 226)" />
+        <Button name="6" color="rgb(226, 226, 226)" />
+        <Button name="-" />
       </div>
       <div className="btn-row">
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
-        <Button name="+" color="rgb(255, 171, 74)" />
+        <Button name="1" color="rgb(226, 226, 226)" />
+        <Button name="2" color="rgb(226, 226, 226)" />
+        <Button name="3" color="rgb(226, 226, 226)" />
+        <Button name="+" />
       </div>
       <div className="btn-row">
-        <Button wide name="0" />
-        <Button name="." />
-        <Button name="=" color="rgb(255, 171, 74)" />
+        <Button wide name="0" color="rgb(226, 226, 226)" />
+        <Button name="." color="rgb(226, 226, 226)" />
+        <Button name="=" />
       </div>
     </div>
   );

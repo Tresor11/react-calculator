@@ -17,3 +17,7 @@ Button.propTypes = {
   color: PropTypes.string,
   wide: PropTypes.bool,
 };
+
+Button.defaultProps = {
+  color: 'rgb(255, 171, 74)',
+};
