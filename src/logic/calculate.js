@@ -14,11 +14,16 @@ const calculate = (buttonName, calculatorData) => {
       total += buttonName;
     }
   } else if (oprations.includes(buttonName)) {
-    total = operate(total, next, buttonName);
+    next = next !== null ? operate(next, total.split(operation)[1], operation) : total;
+    operation = buttonName;
+    total += buttonName;
+  } else if (buttonName === 'Ac') {
+    total = null;
+    next = null;
   } else {
-    console.log('default');
-    total += 2;
-    next += 1;
+    total = operate(next, total.split(operation)[1], operation);
+    next = null;
+    operation = null;
   }
   return { total, next, operation };
 };

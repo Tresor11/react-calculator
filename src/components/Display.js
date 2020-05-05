@@ -6,7 +6,7 @@ import React from 'react';
 export default function Display({ result }) {
   return (
     <div className="display">
-      <h1>{result}</h1>
+      <h1>{result || 0}</h1>
     </div>
   );
 }

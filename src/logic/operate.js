@@ -2,8 +2,8 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const first = Big(numberOne);
-  const second = Big(numberTwo);
+  const first = numberOne !== null ? Big(numberOne) : 0;
+  const second = numberTwo !== null ? Big(numberTwo) : 0;
   let total = 0;
   switch (operation) {
     case '-':
