@@ -2,8 +2,8 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const first = Big(numberOne);
-  const second = Big(numberTwo);
+  const first = numberOne !== null ? Big(numberOne) : 0;
+  const second = numberTwo !== null ? Big(numberTwo) : 0;
   let total = 0;
   switch (operation) {
     case '-':
@@ -16,12 +16,19 @@ const operate = (numberOne, numberTwo, operation) => {
       total = first / 100;
       break;
     case '÷':
-      total = first.div(second);
+      if (numberTwo === '0') {
+        total = 'Infinity';
+      } else {
+        total = first.div(second);
+      }
+      break;
+    case '+':
+      total = first.plus(second);
       break;
     default:
-      total = first.plus(second);
+      total = 0;
   }
-  return total;
+  return total.toString();
 };
 
 export default operate;
