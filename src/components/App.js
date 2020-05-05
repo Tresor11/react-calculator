@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/jsx-filename-extension */
 
 import React from 'react';
@@ -7,14 +8,31 @@ import '../App.css';
 // eslint-disable-next-line no-unused-vars
 import calculate from '../logic/calculate';
 
-function App() {
-  return (
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-    <div className="App">
-      <Display />
-      <ButtonPanel />
-    </div>
-  );
+  handleClick(s) {
+    const finalState = calculate(s, this.state);
+    console.log(s, finalState);
+    this.setState(finalState);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Display result={this.state.total} />
+        <ButtonPanel onClick={name => this.handleClick(name)} />
+      </div>
+    );
+  }
 }
 
 export default App;

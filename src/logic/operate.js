@@ -21,7 +21,7 @@ const operate = (numberOne, numberTwo, operation) => {
     default:
       total = first.plus(second);
   }
-  return total;
+  return total.toString();
 };
 
 export default operate;

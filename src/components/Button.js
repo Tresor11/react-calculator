@@ -4,12 +4,24 @@ import PropTypes from 'prop-types';
 
 import React from 'react';
 
-export default function Button({ name, color, wide }) {
+export default function Button({
+  name, color, wide, onClick,
+}) {
   const style = {
     backgroundColor: color,
     width: wide ? '50%' : '25%',
   };
-  return <button type="button" style={style}>{name}</button>;
+  return (
+    <button
+      type="button"
+      style={style}
+      onClick={() => {
+        onClick(name);
+      }}
+    >
+      {name}
+    </button>
+  );
 }
 
 Button.propTypes = {

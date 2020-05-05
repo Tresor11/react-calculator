@@ -2,37 +2,37 @@
 import React from 'react';
 import Button from './Button';
 
-export default function ButtonPanel() {
+export default function ButtonPanel({ onClick }) {
   return (
     <div className="btn-cont">
       <div className="btn-row">
-        <Button name="Ac" color="rgb(226, 226, 226)" />
-        <Button name="+/-" color="rgb(226, 226, 226)" />
-        <Button name="%" color="rgb(226, 226, 226)" />
-        <Button name="÷" />
+        <Button name="Ac" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="+/-" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="%" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="÷" onClick={name => onClick(name)} />
       </div>
       <div className="btn-row">
-        <Button name="7" color="rgb(226, 226, 226)" />
-        <Button name="8" color="rgb(226, 226, 226)" />
-        <Button name="9" color="rgb(226, 226, 226)" />
-        <Button name="x" />
+        <Button name="7" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="8" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="9" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="x" onClick={name => onClick(name)} />
       </div>
       <div className="btn-row">
-        <Button name="4" color="rgb(226, 226, 226)" />
-        <Button name="5" color="rgb(226, 226, 226)" />
-        <Button name="6" color="rgb(226, 226, 226)" />
-        <Button name="-" />
+        <Button name="4" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="5" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="6" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="-" onClick={name => onClick(name)} />
       </div>
       <div className="btn-row">
-        <Button name="1" color="rgb(226, 226, 226)" />
-        <Button name="2" color="rgb(226, 226, 226)" />
-        <Button name="3" color="rgb(226, 226, 226)" />
-        <Button name="+" />
+        <Button name="1" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="2" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="3" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="+" onClick={name => onClick(name)} />
       </div>
       <div className="btn-row">
-        <Button wide name="0" color="rgb(226, 226, 226)" />
-        <Button name="." color="rgb(226, 226, 226)" />
-        <Button name="=" />
+        <Button wide name="0" onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="." onClick={name => onClick(name)} color="rgb(226, 226, 226)" />
+        <Button name="=" onClick={name => onClick(name)} />
       </div>
     </div>
   );
