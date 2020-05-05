@@ -20,9 +20,13 @@ const calculate = (buttonName, calculatorData) => {
       total += buttonName;
     }
   } else if (oprations.includes(buttonName)) {
-    next = next !== null ? operate(next, total.split(operation)[1], operation) : total;
-    operation = buttonName;
-    total += buttonName;
+    if (buttonName !== '%') {
+      next = next !== null ? operate(next, total.split(operation)[1], operation) : total;
+      operation = buttonName;
+      total += buttonName;
+    } else {
+      total /= 100;
+    }
   } else if (buttonName === 'Ac') {
     total = null;
     next = null;
