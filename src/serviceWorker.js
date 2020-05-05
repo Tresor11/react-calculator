@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable arrow-parens */
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-param-reassign */
 // This optional code is used to register a service worker.
