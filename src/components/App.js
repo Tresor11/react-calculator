@@ -21,7 +21,6 @@ class App extends React.Component {
 
   handleClick(s) {
     const finalState = calculate(s, this.state);
-    console.log(s, finalState);
     this.setState(finalState);
   }
 

@@ -16,7 +16,11 @@ const operate = (numberOne, numberTwo, operation) => {
       total = first / 100;
       break;
     case '÷':
-      total = first.div(second);
+      if (numberTwo === '0') {
+        total = 'Infinity';
+      } else {
+        total = first.div(second);
+      }
       break;
     default:
       total = first.plus(second);

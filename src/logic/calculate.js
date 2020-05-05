@@ -8,7 +8,7 @@ const calculate = (buttonName, calculatorData) => {
   if (buttonName === '+/-') {
     total = parseFloat(total) * (-1).toString();
   } else if (numbers.includes(buttonName)) {
-    if (total == null) {
+    if (total === null || total === 'Infinity') {
       total = buttonName;
     } else {
       total += buttonName;
