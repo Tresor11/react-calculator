@@ -22,8 +22,11 @@ const operate = (numberOne, numberTwo, operation) => {
         total = first.div(second);
       }
       break;
-    default:
+    case '+':
       total = first.plus(second);
+      break;
+    default:
+      total = 0;
   }
   return total.toString();
 };

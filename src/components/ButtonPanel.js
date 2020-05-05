@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
 export default function ButtonPanel({ onClick }) {
@@ -37,3 +38,7 @@ export default function ButtonPanel({ onClick }) {
     </div>
   );
 }
+
+ButtonPanel.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};

@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 /* eslint-disable prefer-const */
 import operate from './operate';
 
@@ -10,7 +11,12 @@ const calculate = (buttonName, calculatorData) => {
   } else if (numbers.includes(buttonName)) {
     if (total === null || total === 'Infinity') {
       total = buttonName;
-    } else {
+    } else if (buttonName === '.') {
+      let arr = operation ? total.split(operation)[1] : total;
+      if (count(buttonName, arr) < 1) {
+        total += buttonName;
+      }
+    } else if (buttonName !== '0' || total !== '0') {
       total += buttonName;
     }
   } else if (oprations.includes(buttonName)) {
@@ -26,6 +32,17 @@ const calculate = (buttonName, calculatorData) => {
     operation = null;
   }
   return { total, next, operation };
+};
+
+const count = (el, arr) => {
+  let sum = 0;
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === el) {
+      sum += 1;
+    }
+  }
+  return sum;
 };
 
 export default calculate;

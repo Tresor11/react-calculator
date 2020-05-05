@@ -28,7 +28,9 @@ Button.propTypes = {
   name: PropTypes.string.isRequired,
   color: PropTypes.string,
   wide: PropTypes.bool,
+  onClick: PropTypes.func.isRequired,
 };
+
 
 Button.defaultProps = {
   color: 'rgb(255, 171, 74)',
