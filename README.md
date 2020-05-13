@@ -2,7 +2,7 @@
 
 > This is repo contains an implementation of a calculator using react
 
-![screenshot](./app_screenshot.png)
+![screenshot](./calculator.png)
 
 The calculator supports all the basic operations
 
