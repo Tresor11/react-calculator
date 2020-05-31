@@ -1,4 +1,4 @@
-# Project Name
+# React calculator
 
 > This is repo contains an implementation of a calculator using react
 
