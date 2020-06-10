@@ -14,7 +14,7 @@ The calculator supports all the basic operations
 
 ## Live Demo
 
-[Live Demo Link](https://react-calculator-t.herokuapp.com/)
+[Live Demo Link](https://calculator-t.netlify.app/)
 
 
 ## Getting Started
